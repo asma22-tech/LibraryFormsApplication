@@ -45,10 +45,10 @@
             this.languagetxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.publisheridtxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.guna2Panel16 = new Guna.UI2.WinForms.Guna2Panel();
-            this.authoridtxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.authoridtxt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Panel16 = new Guna.UI2.WinForms.Guna2Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel16.SuspendLayout();
@@ -395,6 +395,19 @@
             this.guna2Panel1.Size = new System.Drawing.Size(569, 450);
             this.guna2Panel1.TabIndex = 66;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(225, 340);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(95, 25);
+            this.label2.TabIndex = 75;
+            this.label2.Text = "Author_id";
+            this.label2.Click += new System.EventHandler(this.label9_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -406,18 +419,6 @@
             this.label3.Size = new System.Drawing.Size(54, 25);
             this.label3.TabIndex = 80;
             this.label3.Text = "ISBN";
-            // 
-            // guna2Panel16
-            // 
-            this.guna2Panel16.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel16.BorderRadius = 35;
-            this.guna2Panel16.Controls.Add(this.pictureBox3);
-            this.guna2Panel16.FillColor = System.Drawing.Color.White;
-            this.guna2Panel16.Location = new System.Drawing.Point(18, 33);
-            this.guna2Panel16.Name = "guna2Panel16";
-            this.guna2Panel16.ShadowDecoration.Parent = this.guna2Panel16;
-            this.guna2Panel16.Size = new System.Drawing.Size(483, 420);
-            this.guna2Panel16.TabIndex = 65;
             // 
             // authoridtxt
             // 
@@ -450,18 +451,18 @@
             this.authoridtxt.TextOffset = new System.Drawing.Point(5, 0);
             this.authoridtxt.TextChanged += new System.EventHandler(this.guna2TextBox6_TextChanged);
             // 
-            // label2
+            // guna2Panel16
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(225, 340);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 25);
-            this.label2.TabIndex = 75;
-            this.label2.Text = "Author_id";
-            this.label2.Click += new System.EventHandler(this.label9_Click);
+            this.guna2Panel16.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel16.BorderRadius = 35;
+            this.guna2Panel16.Controls.Add(this.pictureBox3);
+            this.guna2Panel16.FillColor = System.Drawing.Color.White;
+            this.guna2Panel16.Location = new System.Drawing.Point(18, 33);
+            this.guna2Panel16.Name = "guna2Panel16";
+            this.guna2Panel16.ShadowDecoration.Parent = this.guna2Panel16;
+            this.guna2Panel16.Size = new System.Drawing.Size(483, 420);
+            this.guna2Panel16.TabIndex = 65;
+            this.guna2Panel16.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel16_Paint);
             // 
             // AddBooks
             // 

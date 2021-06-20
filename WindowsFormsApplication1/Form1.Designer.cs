@@ -41,7 +41,6 @@
             // 
             // ProgressBar1
             // 
-            this.ProgressBar1.AnimationFunction = ((WinFormAnimation.AnimationFunctions.Function)(resources.GetObject("ProgressBar1.AnimationFunction")));
             this.ProgressBar1.AnimationSpeed = 500;
             this.ProgressBar1.BackColor = System.Drawing.Color.White;
             this.ProgressBar1.Font = new System.Drawing.Font("Arabic Typesetting", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

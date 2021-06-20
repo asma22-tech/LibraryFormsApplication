@@ -33,7 +33,7 @@ namespace WindowsFormsApplication1
                 cmd.Parameters.Add("@Staff_return_id", SqlDbType.VarChar).Value = "00";
                 cmd.Parameters.Add("@reader_id", SqlDbType.VarChar).Value = readeridtxt.Text.ToString();
                 cmd.Parameters.Add("@ISBN", SqlDbType.VarChar).Value = isbntxt.Text.ToString();
-                cmd.Parameters.Add("@borrow_date", SqlDbType.DateTime).Value = borrdlcrdrowdatetxt.Text.ToString();
+                cmd.Parameters.Add("@borrow_date", SqlDbType.DateTime).Value = borrowdatetxt.Text.ToString();
                 
                 con.Open();
                 cmd.ExecuteNonQuery();
@@ -55,6 +55,17 @@ namespace WindowsFormsApplication1
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void borrowdatetxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new Dahboard().Show();
+            this.Hide();
         }
     }
 }

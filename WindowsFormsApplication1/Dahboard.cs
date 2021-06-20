@@ -123,6 +123,11 @@ namespace WindowsFormsApplication1
             new Reports().Show();
             this.Hide();
         }
+
+        private void guna2Panel16_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
    

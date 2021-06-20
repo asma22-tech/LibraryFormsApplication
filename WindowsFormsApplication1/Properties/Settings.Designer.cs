@@ -32,5 +32,16 @@ namespace WindowsFormsApplication1.Properties {
                 return ((string)(this["LibraryConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ASMAA\\SQLEXPRESS;Initial Catalog=Library_System;Integrated Security=T" +
+            "rue")]
+        public string Library_SystemConnectionString {
+            get {
+                return ((string)(this["Library_SystemConnectionString"]));
+            }
+        }
     }
 }

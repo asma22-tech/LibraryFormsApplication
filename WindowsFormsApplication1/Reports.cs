@@ -64,5 +64,10 @@ namespace WindowsFormsApplication1
             new Dahboard().Show();
             this.Hide();
         }
+
+        private void guna2DataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
