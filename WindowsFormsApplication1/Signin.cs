@@ -31,7 +31,7 @@ namespace WindowsFormsApplication1
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
         }
-        public string constring = "Data Source=ASMAA\\SQLEXPRESS;Initial Catalog=Library_Project;Integrated Security=True";
+        public string constring = "Data Source=ASMAA\\SQLEXPRESS;Initial Catalog=Library_System;Integrated Security=True";
 
 
         private void button3_Click(object sender, EventArgs e)
@@ -70,7 +70,7 @@ namespace WindowsFormsApplication1
 
         private void label6_Click(object sender, EventArgs e)
         {
-            new Dahboard().Show();
+            new SignupScreen().Show();
             this.Hide();
         }
 
@@ -84,18 +84,29 @@ namespace WindowsFormsApplication1
             using (SqlConnection con = new SqlConnection(constring))
             using (SqlCommand cmd = con.CreateCommand())
             {
-                cmd.CommandText = "INSERT INTO Authentication(email,password) Values (@email,@password)";
-                cmd.Parameters.Add("@Email", SqlDbType.VarChar).Value = txtUsername.Text.ToString();
+                SqlDataAdapter da = new SqlDataAdapter("Select * from Authentication email,password) Values (@email,@Password);", con);
+                cmd.Parameters.Add("@email", SqlDbType.VarChar).Value = txtUsername.Text.ToString();
                 cmd.Parameters.Add("@Password", SqlDbType.VarChar).Value = txtpassword.Text.ToString();
-                con.Open();
-                cmd.ExecuteNonQuery();
                 new Dahboard().Show();
                 this.Hide();
 
             }
+
+            
         }
 
         private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            new SignupScreen().Show();
+            this.Hide();
+        }
+
+        private void Signin_Load(object sender, EventArgs e)
         {
 
         }

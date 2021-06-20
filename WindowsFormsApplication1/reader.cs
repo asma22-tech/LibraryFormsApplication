@@ -32,5 +32,11 @@ namespace WindowsFormsApplication1
         {
 
         }
+
+        private void guna2ImageButton8_Click(object sender, EventArgs e)
+        {
+            new ViewReaders().Show();
+            this.Hide();
+        }
     }
 }

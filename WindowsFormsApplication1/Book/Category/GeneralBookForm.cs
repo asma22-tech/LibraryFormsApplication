@@ -17,7 +17,7 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
-        public string constring = "Data Source=ASMAA\\SQLEXPRESS;Initial Catalog=Library_Project;Integrated Security=True";
+        public string constring = "Data Source=ASMAA\\SQLEXPRESS;Initial Catalog=Library_System;Integrated Security=True";
 
         private void GeneralBookForm_Load(object sender, EventArgs e)
         {

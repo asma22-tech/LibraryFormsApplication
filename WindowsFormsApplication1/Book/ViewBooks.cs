@@ -18,11 +18,11 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
         public string constring = "Data Source=ASMAA\\SQLEXPRESS;Initial Catalog=Library_Project;Integrated Security=True";
-        private object dtgridList;
+        
 
         private void ViewBooks_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -98,6 +98,28 @@ namespace WindowsFormsApplication1
         {
             new Books().Show();
             this.Hide();
+        }
+
+        private void lbltitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+            //using (SqlConnection con = new SqlConnection(constring))
+            //using (SqlCommand cmd = con.CreateCommand())
+            //{
+            //    SqlDataAdapter da = new SqlDataAdapter("Select count(*) from Book;", con);
+            //    DataSet ds = new DataSet();
+            //    da.Fill(ds, "Book");
+            //    txtUsername.Text = 
+            //}
         }
     }
 }

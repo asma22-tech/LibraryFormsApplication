@@ -171,6 +171,7 @@
             this.label5.Size = new System.Drawing.Size(180, 18);
             this.label5.TabIndex = 22;
             this.label5.Text = "Don\'t have an Account ";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -240,6 +241,7 @@
             this.Name = "Signin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Signin";
+            this.Load += new System.EventHandler(this.Signin_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

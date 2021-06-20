@@ -108,7 +108,14 @@ namespace WindowsFormsApplication1
 
         private void guna2Button6_Click(object sender, EventArgs e)
         {
-            
+            new @return().Show();
+            this.Hide();
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            new issue().Show();
+            this.Hide();
         }
 
         private void guna2Button5_Click(object sender, EventArgs e)
@@ -117,4 +124,9 @@ namespace WindowsFormsApplication1
             this.Hide();
         }
     }
-}
+
+   
+        
+    }
+    
+
